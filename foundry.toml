@@ -2,5 +2,11 @@
 src = "src"
 out = "out"
 libs = ["lib"]
+remappings = ['@openzeppelin=lib/openzeppelin-contracts']
+ffi = true # 需要处理链外数据的时候需要开启
+fs_permissions = [
+    { access = "read", path = "./img/" },
+    { access = "read", path = "./broadcast" },
+]
 
 # See more config options https://github.com/foundry-rs/foundry/blob/master/crates/config/README.md#all-options
